@@ -1,5 +1,4 @@
-﻿using Evaluacion.moldes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Evaluacion.moldes;
 
-namespace Evaluacion
+namespace Evaluaciones_1
 {
     public partial class Form1 : Form
     {
@@ -41,15 +41,15 @@ namespace Evaluacion
             {
                 lbAll.Items.Clear();
                 lbLargos.Items.Clear();
-                for(int i=0; i< index; i++)
+                for (int i = 0; i < index; i++)
                 {
                     lbAll.Items.Add(estu.Mostrar()[i]);
-                    if(estu.Mostrar()[i].Length> 25)
+                    if (estu.Mostrar()[i].Length > 25)
                     {
                         lbLargos.Items.Add(estu.Mostrar()[i]);
                     }
                 }
-               
+
             }
         }
     }
